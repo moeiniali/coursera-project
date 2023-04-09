@@ -10,9 +10,14 @@
 --color-text-green:#557c3e; 
 
 }
+.text_header_color{
+    color: #951c49;
+    font-size: 16px;
+    font-weight: bold;
+}
 .cours_header{
     width: 100%;
-    height: 140px;
+    height: auto;
     background-color: #f6b319;
     display: grid;
     grid-template-columns: auto auto auto;
