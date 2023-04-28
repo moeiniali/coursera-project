@@ -1,26 +1,18 @@
 @media screen and (max-width: 768px) {
-  .cours_header {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-  }
-  .cours_header_item_description {
-    width: 80%;
-    margin-left: 14px;
-  }
-  .cours_header_item_navbar {
-    width: 100%;
-    display: flex;
-  }
-  .navbar {
-    width: 100% !important;
-  }
+  /* start header------------------------- */
+
+
+
   .container-fluid {
     width: 100% !important;
 justify-content: flex-end !important;
   }
-  .navbar-toggler{
 
-   
-  }
+
+/* end header-------------------------------- */
+
+/* start container--------------------------- */
+
+
+
 }

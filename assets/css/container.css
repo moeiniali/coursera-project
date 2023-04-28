@@ -1,0 +1,8 @@
+
+.container{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
