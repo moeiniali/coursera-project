@@ -1,0 +1,11 @@
+.box1 a img:hover ,
+.box2 a img:hover ,
+.box3 iframe:hover {
+box-shadow: 1px 1px 10px gray;
+list-style: none;
+text-decoration: none;
+}
+.box1 a , .box2 a {
+    text-decoration: none;
+    list-style: none;
+}
