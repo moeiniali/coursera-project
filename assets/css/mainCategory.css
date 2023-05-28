@@ -1,0 +1,15 @@
+#aks {
+  background-image: url("../image//FNC_OGImage_Taiwanese-Beef-Noodle-Soup.jpg");
+  background-size: 100% 100% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: none;
+width: 16rem;
+height: 12rem;
+margin: 10px 10px ;
+}
+#aks a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.699);
+}
