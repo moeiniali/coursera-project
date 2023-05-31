@@ -1,8 +1,5 @@
 @media screen and (max-width: 768px) {
   /* start header------------------------- */
-
-
-
   .container-fluid {
     width: 100% !important;
 justify-content: flex-end !important;

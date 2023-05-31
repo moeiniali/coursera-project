@@ -8,6 +8,7 @@
 width: 16rem;
 height: 12rem;
 margin: 10px 10px ;
+cursor: pointer;
 }
 #aks a {
   text-decoration: none;
