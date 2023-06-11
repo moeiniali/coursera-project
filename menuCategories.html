@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/mediaScreen.css" />
     <link rel="stylesheet" href="./assets/css/container.css" />
-    <link rel="stylesheet" href="./assets/css/mainCategory.css" />
+    <link rel="stylesheet" href="./assets/css/menuCategories.css" />
     <link
       rel="stylesheet"
       href="node_modules\bootstrap\dist\css\bootstrap.min.css"
@@ -43,11 +43,13 @@
           <span>Kosher Certified</span>
         </p>
       </div>
-      <div id="#navbarNav" class="box_3 d-xs-none ">
+      <div id="#navbarNav" class="box_3 d-xs-none">
         <ul id="toggle">
-          <li class="nav-item text_header_color">
+          <li class="nav-item active text_header_color">
             <img src="/assets/image/restaurant.png" alt="" />
-            <a class="nav-link" aria-current="page"  href="./menuCategories.html">Menu</a>
+            <a class="nav-link" aria-current="page" href="./menuCategories.html"
+              >Menu</a
+            >
           </li>
           <li class="nav-item text_header_color">
             <img src="/assets/image/warning.png" alt="" />
@@ -86,7 +88,7 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="./mainCategory.html"
+                  href="./menuCategories.html"
                   >Menu</a
                 >
               </li>
@@ -116,58 +118,201 @@
     </div>
 
     <!-- start main content--------------------------------------- -->
-    <div class="row justify-content-center gap-3 p-3 m-0">
 
-      <div id="aks"
-        class="card col-md-3 p-0">
-         <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
+<div class="menuCountainer">
+
+    <div class="container d-flex flex-row flex-wrap align-content-center justify-content-center align-items-center ng-scope gap-5">
+      <h2 id="menu-categories-title" class=" d-inline w-100 text-center text-white mt-4">Menu Categories</h2>
+      <div class="text-center d-inline w-100 text-light">
+        Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
       </div>
-
-      <div id="aks"
-        class="card col-md-3 p-0">
-         <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-      </div>
-
-      <div id="aks"
-      class="card col-md-3 p-0">
-       <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
+    
+    
+      <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="singleCategory.html">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/C.jpg" alt="Lunch" src="./assets//image//menu image/C.jpg">
+          <span class="ng-binding">Lunch</span>
+        </div>
+      </a>
     </div>
-    <div id="aks"
-    class="card col-md-3 p-0">
-     <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/A">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/A.jpg" alt="Soup" src="./assets//image//menu image/A.jpg">
+          <span class="ng-binding">Soup</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/B">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/B.jpg" alt="Appetizers" src="./assets//image//menu image/B.jpg">
+          <span class="ng-binding">Appetizers</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/SP">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/SP.jpg" alt="Chef's Recommendations" src="./assets//image//menu image/SP.jpg">
+          <span class="ng-binding">Chef's Recommendations</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/C">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/C.jpg" alt="Chicken" src="./assets//image//menu image/C.jpg">
+          <span class="ng-binding">Chicken</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/F">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/F.jpg" alt="Beef" src="./assets//image//menu image/F.jpg">
+          <span class="ng-binding">Beef</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/V">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/V.jpg" alt="Veal" src="./assets//image//menu image/V.jpg">
+          <span class="ng-binding">Veal</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/DK">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/DK.jpg" alt="Duck" src="./assets//image//menu image/DK.jpg">
+          <span class="ng-binding">Duck</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/VG">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/VG.jpg" alt="Vegetables" src="./assets//image//menu image/VG.jpg">
+          <span class="ng-binding">Vegetables</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/CU">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/CU.jpg" alt="Curry" src="./assets//image//menu image/CU.jpg">
+          <span class="ng-binding">Curry</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/NL">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/NL.jpg" alt="Noodles (Lo Mein)" src="./assets//image//menu image/NL.jpg">
+          <span class="ng-binding">Noodles (Lo Mein)</span>
+        </div>
+      </a>
+    </div>
+    </menu-category><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/NF">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/NF.jpg" alt="Mei Fan (Very Fine Noodles)" src="./assets//image//menu image/NF.jpg">
+          <span class="ng-binding">Mei Fan (Very Fine Noodles)</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/PF">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/F.jpg" alt="Pan Fried Noodles" src="./assets//image//menu image/F.jpg">
+          <span class="ng-binding">Pan Fried Noodles</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/FR">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/FR.jpg" alt="Fried Rice" src="./assets//image//menu image/FR.jpg">
+          <span class="ng-binding">Fried Rice</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/CM">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/CM.jpg" alt="Chow Mein" src="./assets//image//menu image/CM.jpg">
+          <span class="ng-binding">Chow Mein</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/FY">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/D.jpg" alt="Egg Foo Young" src="./assets//image//menu image/D.jpg">
+          <span class="ng-binding">Egg Foo Young</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/SO">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/CU.jpg" alt="Side Orders" src="./assets//image//menu image/CU.jpg">
+          <span class="ng-binding">Side Orders</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/DS">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/DS.jpg" alt="Desserts" src="./assets//image//menu image/DS.jpg">
+          <span class="ng-binding">Desserts</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/D">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/C.jpg" alt="Dinner Combo" src="./assets//image//menu image/C.jpg">
+          <span class="ng-binding">Dinner Combo</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    <menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+      <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="#/menu/SR">
+        <div class="menuImage">
+          <img width="200" height="200" ng-src="./assets//image//menu image/SR.jpg" alt="Sushi Menu" src="./assets//image//menu image/SR.jpg">
+          <span class="ng-binding">Sushi Menu</span>
+        </div>
+      </a>
+    </div>
+    </menu-category>
+    
+    </div>
+
   </div>
-  <div id="aks"
-  class="card col-md-3 p-0">
-   <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
 
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
 
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
-     
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
-
-<div id="aks"
-class="card col-md-3 p-0">
- <a href="#" class="bg-black bg-opacity-75 p-2 text-center  w-100">Go somewhere </a>
-</div>
     </div>
     <!-- start footer -------------------------------------------- -->
 

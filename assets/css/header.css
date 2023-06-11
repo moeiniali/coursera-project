@@ -128,12 +128,17 @@ body {
 height: 100%;
 
 }
+.cursor{
+  cursor: pointer;
+}
 .toggle{
   width: 100%;
   height: auto;
   display: flex;
   padding-left: 0 !important;
-  justify-content: center
+  justify-content: center;
+  cursor: pointer;
+
 }
 .menu_btn{
   background-color: #f6b319 !important;

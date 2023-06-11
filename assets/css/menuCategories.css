@@ -1,0 +1,44 @@
+
+.menuCountainer{
+  display: flex;
+}
+.menuImageBox{
+
+  cursor: pointer;
+
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.menuImageBox a{
+  text-decoration: none;   
+}
+.menuImage{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+
+
+}
+.menuImage img{
+  position: relative;
+  width: 240px;
+  height: 220px;
+  border-radius: 8px;
+  aspect-ratio: auto 200 / 200;
+}
+.menuImage span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}

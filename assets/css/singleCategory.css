@@ -1,0 +1,8 @@
+.item_box{
+    background-color: #61122f ;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+align-content: center;
+flex-direction: row;
+}
