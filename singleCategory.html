@@ -120,12 +120,10 @@
 
     <!-- start main content--------------------------------------- -->
 
-
-
-    <div class="card border-0 " style="max-width: 540px;">
+    <!-- <div class="card border-0 " style="max-width: 540px;">
         <div class="row g-0  item_box">
           <div class="col-md-4 ">
-            <img src="./assets//image/menu image/D.jpg" class="img-fluid " alt="...">
+            <img src="./assets//image/menu image/D.jpg" class="img-fluid " alt="...">dsfsdf
           </div>
           <div class="col-md-8 ">
             <div class="card-body">
@@ -135,7 +133,33 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+    <div class="menu-item-title col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>{{short_name}}</div>
+            <img
+              class="img-responsive"
+              width="250"
+              height="250"
+              src="./assets/image/{{catShortName}}/{{short_name}}.jpg"
+              alt="item"
+            />
+          </div>
+          <div class="menu-item-price">
+            {{price_small}}<span> {{small_portion_name}}</span>{{price_large}}
+            <span> {{larg_portion_name}}</span>
+          </div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">{{name}}</h3>
+          <p class="menu-item-details">{{description}}</p>
+        </div>
       </div>
+      <hr class="visible-xs" />
+    </div>
 
     <!-- start footer -------------------------------------------- -->
 
